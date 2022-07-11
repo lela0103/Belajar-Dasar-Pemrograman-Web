@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: #7ca555;
+    color:white;
+    position: sticky;
+    top: 0;
+    padding: 10px 100px;
+}
+
+nav{
+    margin: 5px 0px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo{
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 1.5em;
+}
+
+nav .menu{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+nav .menu ul {
+    text-align: center;
+    margin: auto;
+}
+
+nav .menu ul li {
+    display: inline-block;
+    float: none;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 0.9em;
+    font-weight: 400;
+    text-align: center;
+    padding: 0px 15px 0px 15px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color:  #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    color: #7ca555;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    padding: 0px 100px;
+}
+
+.flex-item{
+    padding: 80px 20px;
+    margin: auto;
+    flex: 100%;
+}
+
+.flex-item h2{
+    font-size: 32px;
+    text-align: left;
+    color: #7ca555;
+    padding-bottom: 10px;
+}
+
+.cap{
+    color: rgb(97, 97, 97);
+    font-size: 16px;
+    text-align: left;
+}
+
+#hero img{
+    width:100%;
+    border-radius: 100%;
+}
+
+#about, #fasilitas{
+    background-color: #cfe7b9;
+}
+
+#about img{
+    width:100%;
+    border-radius: 10px;
+}
+
+figcaption{
+color:rgb(97, 97, 97);
+font-size: 20px;
+}
+
+.facility img{
+    width:100%;
+    border-radius: 5px;
+}
+
+.facility img:hover{
+    box-shadow: 3px 3px 3px #888888;
+}
+
+aside{
+    color: rgb(119, 119, 119);
+    padding: 20px;
+    text-align: center;
+}
+
+.card{
+    box-shadow: 3px 3px 5px #888888;
+    padding: 20px;
+    background-color: #c6e0af;
+    border-radius: 10px;
+    margin:40px 20px;
+    font-size: 14px;
+}
+
+.photo{
+    width: 50%;
+    border-radius: 100%;
+}
+
+.form{
+    text-align: left;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.nama, .email, .pesan{
+    margin-bottom: 15px;
+}
+
+input, textarea{
+    border: #bdbdbd solid 1px;
+    border-radius: 5px;
+    padding: 8px;
+    width: 400px;
+}
+
+#btn-send{
+    padding: 8px 30px;
+    border: #bdbdbd solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-send:hover{
+    background-color: #7ca555;
+    color: white;
+}
+
+#message{
+    height: 200px;
+}
+
+footer{
+    background-color: #7ca555;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: 400;
+}
+
+#sosmed{
+    padding: 10px;
+}
+
+#sosmed a{
+    opacity: 0.5;
+    color: white;
+    margin: 0px 10px;
+}
+
+#sosmed a:hover{
+    opacity: 1;
+    color: white;
+}
+
+.tombol-menu {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.tombol-menu .garis {
+    height: 3px;
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .logo i{
+        font-size: 1.5rem;
+    }
+
+    input, textarea{
+       width: 100%;
+    }
+
+    header{
+        padding: 10px 50px;
+    }
+    
+    .flex-container{
+        flex-direction: column;
+        padding: 30px 50px;
+    }
+
+    .flex-item h2{
+        font-size: 26px;
+        padding-bottom: 20px;
+        text-align: left;
+    }
+
+    .flex-item{
+        padding: 20px 20px;
+    }
+
+    .cap{
+        font-size: 14px;
+    }
+
+    .form{
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    header{
+        padding: 10px 20px;
+    }
+
+    .wrapper{
+        display: block;
+    }
+    
+    .tombol-menu {
+        display: flex;
+    }
+
+    nav .menu{
+        display: none;
+    }
+
+    nav .menu.active {
+        font-size: 14px;
+        display: flex;
+        background-color: #7ca555;
+    }
+
+    nav .menu ul li {
+        width:100%;
+        border-bottom:1px solid #ffffff;
+        padding: 10px 0px;
+    }
+
+    .flex-container{
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .logo i{
+        font-size: 1.5rem;
+    }
+
+    figcaption{
+        font-size: 16px;
+    }
+
+    .photo{
+        width: 70%;
+    }
+
+    p{
+        font-size: 12px;
+    }
+}
